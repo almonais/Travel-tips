@@ -11,6 +11,7 @@ import { AmisVoyagesComponent } from './amis-voyages/amis-voyages.component';
 
 import { AgmCoreModule } from 'angular2-google-maps/core';
 import { MapsComponent } from './maps/maps.component';
+import { OpenStreetMapComponent } from './open-street-map/open-street-map.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MapsComponent } from './maps/maps.component';
     HeaderComponent,
     MesVoyagesComponent,
     AmisVoyagesComponent,
-    MapsComponent
+    MapsComponent,
+    OpenStreetMapComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +30,7 @@ import { MapsComponent } from './maps/maps.component';
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyBES_58zLj0i_l-H0Q57Dv8Lc-0O2avkt8',
       libraries: ['places']
-    })
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent]
