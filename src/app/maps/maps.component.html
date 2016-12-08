@@ -1,0 +1,13 @@
+<input type="text" [(ngModel)] = "address"  (setAddress) = "getAddress($event)" googleplace/>
+
+<sebm-google-map [latitude]="lat"
+[longitude]="lng"
+(mapClick)="mapClicked($event)"
+[disableDefaultUI]="false"
+[zoomControl]="false"
+>
+  <sebm-google-map-marker
+  [latitude]="lat"
+  [longitude]="lng"
+  ></sebm-google-map-marker>
+</sebm-google-map>
