@@ -14,7 +14,7 @@ export class MapsComponent implements OnInit {
     console.log('pouet');
     console.log($event.coords.lat);
     console.log(this.lat);
-    console.log(google.maps.places)
+    // console.log(google.maps.places);
     // this.markers.push({
     //   lat: $event.coords.lat,
     //   lng: $event.coords.lng

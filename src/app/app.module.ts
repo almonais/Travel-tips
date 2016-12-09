@@ -12,6 +12,8 @@ import { AmisVoyagesComponent } from './amis-voyages/amis-voyages.component';
 import { AgmCoreModule } from 'angular2-google-maps/core';
 import { MapsComponent } from './maps/maps.component';
 import { OpenStreetMapComponent } from './open-street-map/open-street-map.component';
+import { TravelCreationComponent } from './travel-creation/travel-creation.component';
+import { GooglePlaceModule } from 'ng2-google-place-autocomplete';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import { OpenStreetMapComponent } from './open-street-map/open-street-map.compon
     MesVoyagesComponent,
     AmisVoyagesComponent,
     MapsComponent,
-    OpenStreetMapComponent
+    OpenStreetMapComponent,
+    TravelCreationComponent
   ],
   imports: [
     BrowserModule,
@@ -31,6 +34,7 @@ import { OpenStreetMapComponent } from './open-street-map/open-street-map.compon
       apiKey: 'AIzaSyBES_58zLj0i_l-H0Q57Dv8Lc-0O2avkt8',
       libraries: ['places']
     }),
+    GooglePlaceModule
   ],
   providers: [],
   bootstrap: [AppComponent]
